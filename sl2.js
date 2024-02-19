@@ -9,7 +9,7 @@
 
     // Buat tab-episode secara dinamis
     for (var i = 35; i <= totalEpisodes; i++) {
-        var episodeUrl = 'https://iqiyoo.blogspot.com/p/sl2-' + i + '.html';
+        var episodeUrl = 'https://1ac-site.blogspot.com/p/sl2-' + i + '.html';
 
         var tab = document.createElement('a');
         tab.setAttribute('href', episodeUrl);
