@@ -1,5 +1,5 @@
 // Jumlah episode
-    var totalEpisodes = 21;
+    var totalEpisodes = 24;
 
     // Tangkap elemen tabs
     var tabsContainer = document.querySelector('.tabs');
@@ -8,7 +8,7 @@
     var currentPageUrl = window.location.href;
 
     // Buat tab-episode secara dinamis
-    for (var i = 1; i <= totalEpisodes; i++) {
+    for (var i = 24; i <= totalEpisodes; i++) {
         var episodeUrl = 'https://iqiyoo.blogspot.com/p/rene-' + i + '.html';
 
         var tab = document.createElement('a');
