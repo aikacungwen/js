@@ -9,7 +9,7 @@
 
     // Buat tab-episode secara dinamis
     for (var i = 107; i <= totalEpisodes; i++) {
-        var episodeUrl = 'https://1ac-site.blogspot.com/p/ss-' + i + '.html';
+        var episodeUrl = 'https://play.1ac.site/p/ss-' + i + '.html';
 
         var tab = document.createElement('a');
         tab.setAttribute('href', episodeUrl);
