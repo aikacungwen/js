@@ -1,5 +1,5 @@
 // Jumlah episode
-var totalEpisodes = 64;
+var totalEpisodes = 65;
 
 // Tangkap elemen tabs
 var tabsContainer = document.querySelector('.tabs');
@@ -23,7 +23,7 @@ if (currentPageUrl.includes('/money2-6164.html')) { // Ganti "/100k-" dengan "/m
 tabsContainer.appendChild(mergedTab);
 
 // Buat tab-episode untuk episode 65 dan seterusnya
-for (var i = 64; i <= totalEpisodes; i++) {
+for (var i = 65; i <= totalEpisodes; i++) {
     var episodeUrl = 'https://play.1ac.site/p/money2-' + i + '.html'; // Ganti "100k" dengan "money2"
 
     var tab = document.createElement('a');
