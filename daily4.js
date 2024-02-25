@@ -16,9 +16,9 @@
         tab.textContent = ' ' + i;
 
         // Jika URL halaman saat ini cocok dengan URL tab, atur tab sebagai aktif
-        if (currentPageUrl.includes('/daily4' + i + '.html')) {
+        if (currentPageUrl.includes('/daily4-' + i + '.html')) {
             tab.classList.add('active');
         }
 
         tabsContainer.appendChild(tab);
-    } 
+    }
