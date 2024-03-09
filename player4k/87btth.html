@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Video Player with Subtitle</title>
+  <!-- Tambahkan pustaka Fluid Player -->
+  <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fp.css" type="text/css">
+  <script src="https://cdn.fluidplayer.com/v3/current/fp.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Menghilangkan scroll pada body */
+    }
 
-    <title>Memutar Video MP4</title>
-    <link rel="stylesheet" type="text/css" href="https://vjs.zencdn.net/7.15.5/video-js.css">
+    #video-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
 
+    #video-player {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-  
-    <video id="my_video_1" class="video-js vjs-default-skin" width="640" height="360"
-        controls preload="auto" poster="http://video-js.zencoder.com/oceans-clip.jpg"
-        data-setup='{"aspectRatio":"640:360", "playbackRates": [1, 1.5, 2]}'>
-        <source src="https://n102.tempatdata.com/s/dwbRaie7wnjRHrw/download/87Btth4k.mp4" type="video/mp4" />
-        
-        <!-- Tambahkan elemen track untuk subtitle -->
-        <track label="Indonesia" kind="subtitles" srclang="id" src="87ke2.vtt" default>
+  <!-- Gunakan Fluid Player dengan Subtitle -->
+  <div id="video-container">
+    <video id="video-player" controls>
+      <source src="https://n102.tempatdata.com/s/dwbRaie7wnjRHrw/download/87Btth4k.mp4" type="video/mp4">
+      <!-- Tambahkan track untuk subtitle -->
+      <track kind="subtitles" src="https://aikacungwen.github.io/js/player4k/87ke2.vtt" srclang="id" label="English">
+      Your browser does not support the video element.
     </video>
- 
-    <script src="https://vjs.zencdn.net/7.15.5/video.js"></script>
+  </div>
+  <script>
+    // Inisialisasi Fluid Player
+    fluidPlayer("video-player");
+  </script>
 </body>
 </html>
