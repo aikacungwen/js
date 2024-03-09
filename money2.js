@@ -1,5 +1,5 @@
 // Jumlah episode
-var totalEpisodes = 68;
+var totalEpisodes = 100;
 
 // Tangkap elemen tabs
 var tabsContainer = document.querySelector('.tabs');
@@ -15,7 +15,7 @@ for (var i = 61; i <= totalEpisodes; i++) {
     tab.setAttribute('href', episodeUrl);
     
     if (i === 61) {
-        tab.textContent = 'Episodes [61-64]';
+        tab.textContent = '[61-64]';
         tab.classList.add('active'); // Set kelas active untuk episode [61-64]
     } else {
         tab.textContent = ' ' + i;
