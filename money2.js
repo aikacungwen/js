@@ -15,7 +15,7 @@ for (var i = 61; i <= totalEpisodes; i++) {
     tab.setAttribute('href', episodeUrl);
     
     if (i === 61) {
-        tab.textContent = '[61-64]';
+        tab.textContent = '61-64';
         tab.classList.add('active'); // Set kelas active untuk episode [61-64]
     } else {
         tab.textContent = ' ' + i;
