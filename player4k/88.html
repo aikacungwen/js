@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Video Player with Subtitle</title>
+  <!-- Tambahkan pustaka Fluid Player -->
+  <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fp.css" type="text/css">
+  <script src="https://cdn.fluidplayer.com/v3/current/fp.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Menghilangkan scroll pada body */
+    }
+
+    #video-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #video-player {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Gunakan Fluid Player dengan Subtitle -->
+  <div id="video-container">
+    <video id="video-player" controls>
+      <source src="https://n102.tempatdata.com/s/Qz3yCL54RBwrRQA/download/884k.mp4" type="video/mp4">
+      <!-- Tambahkan track untuk subtitle -->
+      <track kind="subtitles" src="https://aikacungwen.github.io/js/player4k/87ke2.vtt" srclang="id" label="English">
+      Your browser does not support the video element.
+    </video>
+  </div>
+  <script>
+    // Inisialisasi Fluid Player
+    fluidPlayer("video-player");
+  </script>
+</body>
+</html>
