@@ -9,14 +9,14 @@
 
     // Buat tab-episode secara dinamis
     for (var i = 1; i <= totalEpisodes; i++) {
-        var episodeUrl = 'https://play.1ac.site/p/100k-' + i + '.html';
+        var episodeUrl = 'https://play.1ac.site/p/al-' + i + '.html';
 
         var tab = document.createElement('a');
         tab.setAttribute('href', episodeUrl);
         tab.textContent = ' ' + i;
 
         // Jika URL halaman saat ini cocok dengan URL tab, atur tab sebagai aktif
-        if (currentPageUrl.includes('/100k-' + i + '.html')) {
+        if (currentPageUrl.includes('/al-' + i + '.html')) {
             tab.classList.add('active');
         }
 
