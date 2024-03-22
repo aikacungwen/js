@@ -1,6 +1,7 @@
 // Tangkap elemen tabs
 var tabsContainer = document.querySelector('.tabs');
 
+// Array yang berisi link untuk setiap episode
 var episodeLinks = [
     'https://play.1ac.site/p/al-1.html',
     'https://play.1ac.site/p/al-2.html',
@@ -16,17 +17,16 @@ var episodeLinks = [
     'https://play.1ac.site/p/al-12.html'
 ];
 
-
 // Mendapatkan URL halaman saat ini
 var currentPageUrl = window.location.href;
 
 // Buat tab-episode secara dinamis
-for (var i = 1; i <= episodeLinks.length; i++) {
-    var episodeUrl = episodeLinks[i - 1];
+for (var i = 0; i < episodeLinks.length; i++) {
+    var episodeUrl = episodeLinks[i];
 
     var tab = document.createElement('a');
     tab.setAttribute('href', episodeUrl);
-    tab.textContent = ' ' + i;
+    tab.textContent = ' ' + (i + 1);
 
     // Jika URL halaman saat ini cocok dengan URL tab, atur tab sebagai aktif
     if (currentPageUrl === episodeUrl) {
