@@ -31,7 +31,7 @@ for (var i = 3; i <= totalEpisodes; i++) {
     tab.textContent = ' ' + i;
 
     // Jika URL halaman saat ini cocok dengan URL tab, atur tab sebagai aktif
-    if (currentPageUrl.includes('/xi-xing-ji-movie-2024-' + i + '.html')) { // Ganti "/100k-" dengan "/money2-"
+    if (currentPageUrl.includes('/hsl-' + i + '.html')) { // Ganti "/100k-" dengan "/money2-"
         tab.classList.add('active');
     }
 
