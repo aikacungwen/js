@@ -1,5 +1,5 @@
 // Jumlah episode
-var totalEpisodes = ;
+var totalEpisodes = 5;
 
 // Tangkap elemen tabs
 var tabsContainer = document.querySelector('.tabs');
@@ -23,7 +23,7 @@ if (currentPageUrl.includes('/hsl-1-4.html')) { // Ganti "/100k-" dengan "/money
 tabsContainer.appendChild(mergedTab);
 
 // Buat tab-episode untuk episode 65 dan seterusnya
-for (var i = 3; i <= totalEpisodes; i++) {
+for (var i = 5; i <= totalEpisodes; i++) {
     var episodeUrl = 'https://play.1ac.site/p/hsl-' + i + '.html'; // Ganti "100k" dengan "money2"
 
     var tab = document.createElement('a');
