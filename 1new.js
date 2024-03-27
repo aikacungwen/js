@@ -10,9 +10,14 @@ var currentPageUrl = window.location.href.toLowerCase(); // Ubah ke huruf kecil
 // Buat baris baru
 var row = document.createElement('tr');
 
+// Array untuk menyimpan link episode
+var episodeLinks = [];
+
 // Membuat link untuk setiap episode dan menambahkannya ke dalam tabContainer
 for (var i = 1; i <= totalEpisodes; i++) {
     var episodeUrl = 'https://play.1ac.site/p/al-' + i + '.html';
+    episodeLinks.push(episodeUrl); // Tambahkan link ke dalam array
+
     var tab = document.createElement('a');
     tab.setAttribute('href', episodeUrl);
     tab.textContent = i;
@@ -35,13 +40,12 @@ for (var i = 1; i <= totalEpisodes; i++) {
 }
 
 // Indeks episode terbaru
-var latestEpisodeIndex = 11; // Misalnya episode terbaru adalah index 23 dalam array
+var latestEpisodeIndex = 11; // Misalnya episode terbaru adalah index 11 dalam array
 
 // Buat tab-episode secara dinamis dan tambahkan label "baru" jika perlu
 row = document.createElement('tr');
 var counter = 0;
-for (var j = 0; j < episodeLinks.length; j++) {
-    var episodeUrl = episodeLinks[j];
+episodeLinks.forEach(function(episodeUrl, index) {
     var tab = document.createElement('a');
     tab.setAttribute('href', episodeUrl);
 
@@ -52,7 +56,7 @@ for (var j = 0; j < episodeLinks.length; j++) {
 
     // Tambahkan teks nomor episode
     var episodeNumber = document.createElement('span');
-    episodeNumber.textContent = j + 1;
+    episodeNumber.textContent = index + 1;
     tab.appendChild(episodeNumber);
 
     var cell = document.createElement('td');
@@ -61,7 +65,7 @@ for (var j = 0; j < episodeLinks.length; j++) {
     counter++;
 
     // Jika ini adalah episode terbaru, tambahkan label "baru" dengan gaya yang ditentukan
-    if (j === latestEpisodeIndex) {
+    if (index === latestEpisodeIndex) {
         var newLabel = document.createElement('span');
         newLabel.textContent = 'baru';
         newLabel.classList.add('new-label');
@@ -69,8 +73,8 @@ for (var j = 0; j < episodeLinks.length; j++) {
     }
 
     // Setelah setiap 7 tab, buat baris baru
-    if (counter % 7 === 0 || j === episodeLinks.length - 1) {
+    if (counter % 7 === 0 || index === episodeLinks.length - 1) {
         tabsContainer.appendChild(row);
         row = document.createElement('tr');
     }
-}
+});
