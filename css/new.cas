@@ -1,0 +1,134 @@
+ .tab-container {
+
+        overflow-y: auto; /* Tambahkan scrollbar vertikal jika tab melebihi tinggi maksimum */
+
+        max-height: 200px; /* Atur tinggi maksimum container */
+
+    }
+
+    .tabs {
+
+        margin: 0;
+
+        padding: 0;
+
+        width: 100%; /* Lebar tabel mengikuti lebar container */
+
+    }
+
+    .tabs td {
+
+        padding: 0px;
+
+        width: calc(100% / 7); /* Setiap kolom mengisi 1/7 lebar container */
+
+    }
+
+    .tabs a {
+
+        display: block;
+
+        padding: 10px 15px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 5px;
+
+        text-decoration: none;
+
+        color: #fff;
+
+        background-color: #333;
+
+        text-align: center;
+
+        position: relative;
+
+    }
+
+    .tabs a.active {
+
+        background-color: #00FFFF;
+
+        color: #000;
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+    .tabs td {
+
+        width: 100%; /* Setiap kolom mengisi seluruh lebar container */
+
+    }
+
+}  
+
+  
+  .tabs a {
+
+    display: inline-block;
+
+    width: 36px; /* Atur lebar tab */
+
+    height: 20px; /* Atur tinggi tab */
+
+    padding: 5px; /* Atur padding untuk memberikan ruang di dalam tab */
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    background-color: #333;
+
+    text-align: center;
+
+}
+.new-label {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    background-color: red;
+
+    color: white;
+
+    padding: 3px 3px;
+
+    font-size: 3px;
+
+    border-radius: 3px;
+
+    width: 3px;
+
+    height: 3px;
+
+    text-align: center;
+
+    line-height: 3px; /* Sesuaikan dengan tinggi label */
+
+    vertical-align: middle; /* Menyesuaikan posisi teks secara vertikal */
+
+}
+  #serverDropdown {
+
+      margin-top: 10px;
+
+      font-size: 12px; /* Adjust the font size as needed */
+
+      height: 20px; /* Adjust the height as needed */
+
+      width: 150px;
+
+    }
+
+.tabs a {
+
+  white-space: nowrap;
