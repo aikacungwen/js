@@ -40,7 +40,7 @@
         }
 
         // Indeks episode terbaru
-        var latestEpisodeIndex = 9999; // Misalnya episode terbaru adalah index 23 dalam array
+        var latestEpisodeIndex = 11; // Misalnya episode terbaru adalah index 23 dalam array
 
         // Buat tab-episode secara dinamis
         row = document.createElement('tr');
