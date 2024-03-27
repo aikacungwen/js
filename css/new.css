@@ -132,3 +132,68 @@
 .tabs a {
 
   white-space: nowrap;
+
+   /* Gaya untuk mode ponsel (7 kolom per baris) */
+
+    @media screen and (max-width: 768px) {
+
+        .tab-container .tabs tbody tr {
+
+            display: block;
+
+        }
+
+        .tab-container .tabs tbody td {
+
+            display: inline-block;
+
+            width: 14.28%; /* 100% / 7 */
+
+            box-sizing: border-box;
+
+        }
+
+    }
+
+    /* Gaya untuk mode desktop (14 kolom per baris) */
+
+    @media screen and (min-width: 769px) {
+
+        .tab-container .tabs tbody tr {
+
+            display: block;
+
+        }
+
+        .tab-container .tabs tbody td {
+
+            display: inline-block;
+
+            width: 7.14%; /* 100% / 14 */
+
+            box-sizing: border-box;
+
+        }
+
+    }
+  /* Gaya untuk mode tablet (7 kolom per baris) */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .tab-container .tabs tbody tr {
+
+        display: block;
+
+    }
+
+    .tab-container .tabs tbody td {
+
+        display: inline-block;
+
+        width: 7.14%;; /* 100% / 7 */
+
+        box-sizing: border-box;
+
+    }
+
+}
