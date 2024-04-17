@@ -1,5 +1,12 @@
 // Jumlah episode
 var totalEpisodes = 5;
+var episodeLinks = [];
+
+// Buat array URL episode secara otomatis
+for (var i = 1; i <= totalEpisodes; i++) {
+    var episodeUrl = 'https://play.1ac.site/p/atgms1' + i + '.html';
+    episodeLinks.push(episodeUrl);
+}
 
 // Tangkap elemen kontainer tab
 var tabsContainer = document.querySelector('.tab-container .tabs tbody');
@@ -67,4 +74,4 @@ for (var j = 0; j < episodeLinks.length; j++) {
         newLabel.classList.add('new-label');
         tab.appendChild(newLabel);
     }
- 
+}
