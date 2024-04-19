@@ -1,5 +1,5 @@
 // Jumlah episode
-var totalEpisodes = 1;
+var totalEpisodes = 2;
 var episodeLinks = [];
 
 // Buat array URL episode secara otomatis
@@ -42,7 +42,7 @@ for (var i = 1; i <= totalEpisodes; i++) {
 }
 
 // Indeks episode terbaru
-var latestEpisodeIndex = 1; // Misalnya episode terbaru adalah index 23 dalam array
+var latestEpisodeIndex = 2; // Misalnya episode terbaru adalah index 23 dalam array
 
 // Buat tab-episode secara dinamis dan tambahkan label "baru" jika perlu
 row = document.createElement('tr');
