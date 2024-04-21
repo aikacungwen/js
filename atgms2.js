@@ -1,5 +1,5 @@
 // Jumlah episode
-var totalEpisodes = 3;
+var totalEpisodes = 4;
 var episodeLinks = [];
 
 // Buat array URL episode secara otomatis
