@@ -1,5 +1,5 @@
-// Jumlah episode
-var totalEpisodes = 9;
+Y// Jumlah episode
+var totalEpisodes = 10;
 
 // Tangkap elemen kontainer tab
 var tabsContainer = document.querySelector('.tab-container .tabs tbody');
