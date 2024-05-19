@@ -35,7 +35,7 @@ for (var i = 1; i <= totalEpisodes; i++) {
 }
 
 // Indeks episode terbaru
-var latestEpisodeIndex = 3; // Misalnya episode terbaru adalah index 23 dalam array
+var latestEpisodeIndex = 13; // Misalnya episode terbaru adalah index 23 dalam array
 
 // Buat tab-episode secara dinamis dan tambahkan label "baru" jika perlu
 row = document.createElement('tr');
