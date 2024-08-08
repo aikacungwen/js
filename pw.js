@@ -1,5 +1,5 @@
 // Jumlah episode
-    var totalEpisodes = 174;
+    var totalEpisodes = 175;
 
     // Tangkap elemen tabs
     var tabsContainer = document.querySelector('.tabs');
