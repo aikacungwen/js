@@ -9,7 +9,7 @@
 
     // Buat tab-episode secara dinamis
     for (var i = 13; i <= totalEpisodes; i++) {
-        var episodeUrl = 'https://play.1ac.site/p/apo2-' + i + '.html';
+        var episodeUrl = 'https://aikacungwen30.blogspot.com/p/apo2-' + i + '.html';
 
         var tab = document.createElement('a');
         tab.setAttribute('href', episodeUrl);

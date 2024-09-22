@@ -1,5 +1,5 @@
 // Jumlah episode
-    var totalEpisodes = 11;
+    var totalEpisodes = 9;
 
     // Tangkap elemen tabs
     var tabsContainer = document.querySelector('.tabs');
@@ -9,7 +9,7 @@
 
     // Buat tab-episode secara dinamis
     for (var i = 1; i <= totalEpisodes; i++) {
-        var episodeUrl = 'https://play.1ac.site/p/yi2-' + i + '.html';
+        var episodeUrl = 'https://aikacungwen30.blogspot.com/p/yi2-' + i + '.html';
 
         var tab = document.createElement('a');
         tab.setAttribute('href', episodeUrl);

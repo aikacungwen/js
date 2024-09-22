@@ -17,17 +17,17 @@ for (var i = 1; i <= totalEpisodes; i++) {
 
     if (i === 7) {
         // Jika episode adalah episode yang dijadikan satu (7-8)
-        episodeUrl = 'https://play.1ac.site/p/manhua4-78.html';
+        episodeUrl = 'https://aikacungwen30.blogspot.com/p/manhua4-78.html';
         tab.textContent = '7-8';
         i++; // Lewati satu iterasi karena sudah mencakup dua episode
     } else if (i >= 14 && i <= 30 && i % 2 === 0) {
         // Jika episode adalah episode yang dijadikan satu (14-15, 16-17, dst.)
-        episodeUrl = 'https://play.1ac.site/p/manhua4-' + i + '.html';
+        episodeUrl = 'https://aikacungwen30.blogspot.com/p/manhua4-' + i + '.html';
         tab.textContent = i + '-' + (i + 1);
         i++; // Lewati satu iterasi karena sudah mencakup dua episode
     } else {
         // Untuk episode tunggal
-        episodeUrl = 'https://play.1ac.site/p/manhua4-' + i + '.html';
+        episodeUrl = 'https://aikacungwen30.blogspot.com/p/manhua4-' + i + '.html';
         tab.textContent = i;
     }
 

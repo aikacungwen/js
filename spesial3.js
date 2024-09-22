@@ -12,7 +12,7 @@ var row = document.createElement('tr');
 
 // Membuat link untuk setiap episode dan menambahkannya ke dalam tabContainer
 for (var i = 1; i <= totalEpisodes; i++) {
-    var episodeUrl = 'https://play.1ac.site/p/spesial3-' + i + '.html';
+    var episodeUrl = 'https://aikacungwen30.blogspot.com/p/spesial3-' + i + '.html';
     var tab = document.createElement('a');
     tab.setAttribute('href', episodeUrl);
     tab.textContent = i;

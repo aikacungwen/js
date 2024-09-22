@@ -8,7 +8,7 @@ var tabsContainer = document.querySelector('.tabs');
 var currentPageUrl = window.location.href;
 
 // Buat tab-episode secara dinamis
-var mergedEpisodeUrl = 'https://play.1ac.site/p/hsl-1-4.html'; // Ganti "100k" dengan "money2"
+var mergedEpisodeUrl = 'https://aikacungwen30.blogspot.com/p/hsl-1-4.html'; // Ganti "100k" dengan "money2"
 
 var mergedTab = document.createElement('a');
 mergedTab.setAttribute('href', mergedEpisodeUrl);
@@ -24,7 +24,7 @@ tabsContainer.appendChild(mergedTab);
 
 // Buat tab-episode untuk episode 65 dan seterusnya
 for (var i = 5; i <= totalEpisodes; i++) {
-    var episodeUrl = 'https://play.1ac.site/p/hsl-' + i + '.html'; // Ganti "100k" dengan "money2"
+    var episodeUrl = 'https://aikacungwen30.blogspot.com/p/hsl-' + i + '.html'; // Ganti "100k" dengan "money2"
 
     var tab = document.createElement('a');
     tab.setAttribute('href', episodeUrl);
